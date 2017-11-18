@@ -1,0 +1,22 @@
+---
+#Running ansible playbook on ansible server
+#Following are the setup tasks
+
+- hosts: all
+  become: yes
+  gather_facts: True
+  tasks:
+    - name: Installing nodejs
+      apt: name=nodejs-legacy state=latest update_cache=yes
+
+    - name: Installing npm
+      apt: name=npm state=latest update_cache=yes
+
+    - name: Installing git
+      apt: name=git state=latest update_cache=yes
+
+    - name: Installing forever
+      npm: name=forever global=yes state=present
+
+    - name: Cloning git repository
+      git: repo=https://github.com/CSC-DevOps/App.git dest=/etc/repo

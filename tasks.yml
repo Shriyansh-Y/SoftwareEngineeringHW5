@@ -1,0 +1,30 @@
+---
+#Running ansible playbook on ansible server
+#the following are the tasks
+- hosts: all
+  become: yes
+  gather_facts: True
+  tasks:
+    - name: Installing npm package ..
+      npm: path=/etc/repo
+
+    - name: Running forever app
+      command: forever start main.js 8000 chdir=/etc/repo
+
+    - name: Checking for latest version of bash
+      apt: name=bash state=latest update_cache=yes
+
+    - name: Checking for latest version of openssl
+      apt: name=openssl state=latest update_cache=yes
+
+    - name: Checking for latest version of openssh-server
+      apt: name=openssh-server state=latest update_cache=yes
+
+    - name: Checking for latest version of openssh-client
+      apt: name=openssh-client state=latest update_cache=yes
+
+    - name: Cleaning up /tmp/*
+      file: path=/tmp state=absent
+
+    - name: Creating tmp
+      file: path=/tmp state=directory
