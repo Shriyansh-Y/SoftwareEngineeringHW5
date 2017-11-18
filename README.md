@@ -14,11 +14,12 @@
 7. Run the following commands that execute the following tasks as follows:  
 (a)  sudo ansible-playbook -i inventory setup.yml
   **Playbook for Setup: setup.yml **  
-    
+  
     * Installs node.js
     * Installs forever
     * Installs npm packages
-    * Pull/clone git repo into a destination: https://github.com/CSC-DevOps/App
+    * Pull/clone git repo into a destination: https://github.com/CSC-DevOps/App  
+    
 (b)  sudo ansible-playbook -i inventory tasks.yml
   **Playbook for Tasks: tasks.yml ** 
 
