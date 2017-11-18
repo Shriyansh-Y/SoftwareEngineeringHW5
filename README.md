@@ -29,7 +29,7 @@
 
 #### Concepts:  
 
-    You can see the solutions to the questions in [Solutions](https://github.ncsu.edu/scyadav/HW5/blob/master/Solutions.pdf)
+You can see the solutions to the questions in [Solutions](https://github.ncsu.edu/scyadav/HW5/blob/master/Solutions.pdf)
 
 
 #### Screencasts:
