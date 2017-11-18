@@ -11,17 +11,17 @@
 4. Open 2 different terminals.
 5. On each of the terminals start the vagrant machines using: vagrant ssh  
 6. Use the .yml files with the terminal accessing the 'ansible' machine  
+
 7. Run the following commands that execute the following tasks as follows:  
-(a)  sudo ansible-playbook -i inventory setup.yml
-  **Playbook for Setup: setup.yml **  
-  
-    * Installs node.js
+
+(a)  sudo ansible-playbook -i inventory setup.yml  
+
+    * Installs nodejs
     * Installs forever
     * Installs npm packages
     * Pull/clone git repo into a destination: https://github.com/CSC-DevOps/App  
     
 (b)  sudo ansible-playbook -i inventory tasks.yml
-  **Playbook for Tasks: tasks.yml ** 
 
     * Runs app: `forever start main.js  <port number>``
     * Ensures `bash`, `openssl`, `openssh-client`, and `openssh-server` are running latest version.
@@ -29,7 +29,7 @@
 
 #### Concepts:  
 
-    You can see the solutions to the questions in [Solutions]()
+    You can see the solutions to the questions in [Solutions](https://github.ncsu.edu/scyadav/HW5/blob/master/Solutions.pdf)
 
 
 #### Screencasts:
