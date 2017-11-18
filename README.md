@@ -34,9 +34,11 @@ You can see the solutions to the questions in [Solutions](https://github.ncsu.ed
 
 #### Screencasts:
 
-* For the entire setup to running playbook: [Complete Setup, tasks, running playbook](https://youtu.be/6lW9FYo6Zpk)  
 
-* For the execution of playbooks: [Screencast for running ansible playbooks](https://youtu.be/bSa4i8uZIZw)
+* Only execution of playbooks and verification: [Screencast for running ansible playbooks](https://youtu.be/bSa4i8uZIZw)  
+ 
+* In case one needs to see the complete setup from installing vagrant commands to running playbook: [Complete Setup, tasks, running playbook](https://youtu.be/6lW9FYo6Zpk)  
+
 
   
  
